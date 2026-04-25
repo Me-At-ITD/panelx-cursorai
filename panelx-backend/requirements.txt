@@ -1,0 +1,43 @@
+# Web Framework
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+
+# Database
+sqlalchemy[asyncio]==2.0.30
+asyncpg==0.29.0
+alembic==1.13.1
+psycopg2-binary==2.9.9
+
+# Pydantic / Settings
+pydantic==2.7.1
+pydantic-settings==2.3.0
+pydantic[email]==2.7.1
+
+# Authentication
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+bcrypt==3.2.2
+
+# File Uploads
+python-multipart==0.0.9
+aiofiles==23.2.1
+
+# S3 / MinIO
+# aioboto3 manages its own compatible boto3/botocore versions via aiobotocore.
+# Do NOT pin boto3 separately — it will conflict with aiobotocore's botocore range.
+aioboto3==12.3.0
+
+# Task Queue
+celery[redis]==5.3.6
+redis==5.0.4
+
+# SFTP
+paramiko==3.4.0
+
+# Encryption (SFTP password storage)
+cryptography==42.0.7
+
+# Utility
+httpx==0.27.0
+greenlet==3.0.3
+aiosmtplib==3.0.1
